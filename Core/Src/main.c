@@ -126,7 +126,7 @@ int main(void)
 	
 	// Enable and Set Priority of EXTI Interupt
 	NVIC_EnableIRQ(EXTI0_1_IRQn);
-	NVIC_SetPriority(EXTI0_1_IRQn, 1); // This will now be handled in between SysTick interupts
+	NVIC_SetPriority(EXTI0_1_IRQn, 3); // This will now be handled in between SysTick interupts
 	
 	// Set priority of SysTick timer
 	NVIC_SetPriority(SysTick_IRQn, 2); // this will now interupt EXTI, higehr priority++++++++
